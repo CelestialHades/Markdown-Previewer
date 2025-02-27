@@ -1,0 +1,57 @@
+body { /* Targets the entire body of the page */
+    font-family: Arial, sans-serif; /* Sets font to Arial or a sans-serif fallback */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges children vertically */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically in the viewport */
+    min-height: 100vh; /* Ensures body takes up full viewport height */
+    margin: 0; /* Removes default margin */
+    background-color: #e8f5e9; /* Sets a light green background color */
+  }
+  
+  .previewer-container { /* Targets the main container div */
+    text-align: center; /* Centers text inside the container */
+    background: #fff; /* Sets a white background */
+    padding: 20px; /* Adds internal spacing */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    width: 80%; /* Sets width to 80% of the viewport */
+    max-width: 1000px; /* Limits maximum width for larger screens */
+  }
+  
+  .editor-preview { /* Targets the container for editor and preview */
+    display: flex; /* Uses flexbox to place editor and preview side-by-side */
+    justify-content: space-between; /* Spaces the children evenly */
+    gap: 20px; /* Adds spacing between editor and preview */
+    margin-top: 20px; /* Adds space above the container */
+  }
+  
+  #editor { /* Targets the textarea for Markdown input */
+    width: 50%; /* Takes up half the container width */
+    height: 400px; /* Sets a fixed height for the textarea */
+    padding: 10px; /* Adds padding inside the textarea */
+    font-size: 16px; /* Sets font size for readability */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    border-radius: 5px; /* Rounds the corners */
+    resize: vertical; /* Allows vertical resizing only */
+  }
+  
+  #preview { /* Targets the div for the HTML preview */
+    width: 50%; /* Takes up half the container width */
+    height: 400px; /* Matches the editor height */
+    padding: 10px; /* Adds padding inside the preview */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    border-radius: 5px; /* Rounds the corners */
+    background-color: #f9f9f9; /* Sets a light gray background */
+    overflow-y: auto; /* Adds vertical scrollbar if content overflows */
+    text-align: left; /* Aligns text to the left for readability */
+  }
+  
+  #preview h1 { /* Targets h1 elements in the preview */
+    font-size: 24px; /* Sets a larger font size for headings */
+    margin: 10px 0; /* Adds vertical spacing */
+  }
+  
+  #preview p { /* Targets paragraphs in the preview */
+    margin: 10px 0; /* Adds vertical spacing */
+  }
